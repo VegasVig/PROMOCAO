@@ -19,6 +19,8 @@
       --line-strong: rgba(255, 255, 255, 0.16);
       --amber: #ffb833;
       --amber-dim: rgba(255, 184, 51, 0.14);
+      --silver: #c8ced8;
+      --silver-dim: rgba(200, 206, 216, 0.18);
       --cyan: #4fd3e8;
       --cyan-dim: rgba(79, 211, 232, 0.14);
       --red: #ff4d4d;
@@ -100,8 +102,8 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: var(--amber);
-      color: #14100a;
+      background: var(--silver);
+      color: #14181f;
       padding: 9px 18px;
       border-radius: 8px;
       font-family: var(--font-mono);
@@ -112,7 +114,7 @@
       text-decoration: none;
       transition: transform 0.2s, box-shadow 0.2s;
     }
-    .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(255, 184, 51, 0.3); }
+    .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(200, 206, 216, 0.35); }
 
     @media (max-width: 760px) {
       .nav-links { display: none; }
@@ -159,6 +161,7 @@
 
     @media (max-width: 900px) {
       .hero { grid-template-columns: 1fr; padding: 50px 20px 40px; min-height: auto; }
+      .hero-visual { order: -1; margin-bottom: 8px; }
     }
 
     .eyebrow {
@@ -227,10 +230,10 @@
     }
 
     .btn-primary {
-      background: var(--amber);
-      color: #14100a;
+      background: var(--silver);
+      color: #14181f;
     }
-    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(255, 184, 51, 0.3); }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(200, 206, 216, 0.35); }
 
     .btn-secondary {
       background: transparent;
