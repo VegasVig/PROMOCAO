@@ -141,11 +141,13 @@ section.block{padding:100px 0}
 .price small{font-size:.75rem;color:var(--faint);width:100%}
 .price strong{font-size:1.9rem;font-weight:800;letter-spacing:-.02em}
 .price span{color:var(--dim);font-size:.85rem}
-.tiers{margin-top:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.tiers{margin-top:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
 .tier{border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center;background:rgba(31,143,255,.05)}
 .tier b{display:block;font-size:1.4rem;font-weight:800;line-height:1}
 .tier i{font-style:normal;font-size:.72rem;color:var(--dim)}
 .tier strong{display:block;margin-top:8px;font-size:.92rem;color:var(--glow)}
+@media(max-width:640px){.tier{padding:12px 4px}.tier strong{font-size:.95rem;line-height:1.25}.tier strong i,.tier strong span{display:block;font-size:.7rem;color:var(--dim);font-weight:500;font-style:normal}}
+@media(max-width:360px){.tiers{gap:6px}.tier{padding:10px 2px}.tier strong{font-size:.84rem}}
 .note{font-size:.8rem;color:var(--dim);background:rgba(31,143,255,.07);border-left:2px solid var(--volt);padding:10px 12px;border-radius:0 8px 8px 0}
 .note.warn{border-color:#f0b232;background:rgba(240,178,50,.07)}
 @media(max-width:980px){.card,.card.wide{grid-column:span 3}}
@@ -339,9 +341,9 @@ footer a{color:var(--silver)}
             <h3>Kit de câmeras com DVR</h3>
             <p>DVR Hikvision com câmeras bullet e dome HD. Para residências, comércios e empresas.</p>
             <div class="tiers">
-              <div class="tier"><b>4</b><i>câmeras</i><strong>R$ 189,90/mês</strong></div>
-              <div class="tier"><b>8</b><i>câmeras</i><strong>R$ 289,90/mês</strong></div>
-              <div class="tier"><b>16</b><i>câmeras</i><strong>R$ 389,90/mês</strong></div>
+              <div class="tier"><b>4</b><i>câmeras</i><strong><i>R$</i> 189,90<span>/mês</span></strong></div>
+              <div class="tier"><b>8</b><i>câmeras</i><strong><i>R$</i> 289,90<span>/mês</span></strong></div>
+              <div class="tier"><b>16</b><i>câmeras</i><strong><i>R$</i> 389,90<span>/mês</span></strong></div>
             </div>
           </div>
         </article>
